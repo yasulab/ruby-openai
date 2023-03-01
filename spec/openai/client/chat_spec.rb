@@ -2,12 +2,11 @@ RSpec.describe OpenAI::Client do
   describe "#chat" do
     context "with messages", :vcr do
       let(:messages) { [{ role: "user", content: "Hello!" }] }
-
       let(:response) do
         OpenAI::Client.new.chat(
           parameters: {
             model: model,
-            messages: messages
+            messages: messages,
           }
         )
       end
