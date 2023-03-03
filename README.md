@@ -299,7 +299,11 @@ response = client.translate(
         model: "whisper-1",
         file: File.open('path_to_file'),
     })
+<<<<<<< HEAD
 puts response.parsed_response['text']
+=======
+puts response.parsed_body['text']
+>>>>>>> fdd4ee8 (Reformat README)
 # => "Translation of the text"
 ```
 
@@ -313,7 +317,11 @@ response = client.transcribe(
         model: "whisper-1",
         file: File.open('path_to_file'),
     })
+<<<<<<< HEAD
 puts response.parsed_response['text']
+=======
+puts response.parsed_body['text']
+>>>>>>> fdd4ee8 (Reformat README)
 # => "Transcription of the text"
 ```
 
